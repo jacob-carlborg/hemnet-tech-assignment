@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_07_09_090151) do
+ActiveRecord::Schema[7.1].define(version: 2025_07_09_095128) do
   create_table "municipalities", force: :cascade do |t|
     t.string "name", null: false
     t.integer "amount_cents", null: false
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_07_09_090151) do
     t.integer "amount_cents", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "municipality_id"
+    t.integer "municipality_id", null: false
     t.index ["municipality_id"], name: "index_prices_on_municipality_id"
   end
 
