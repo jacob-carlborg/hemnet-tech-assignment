@@ -22,4 +22,5 @@ group :development, :test do
   gem "rspec-rails"
   gem 'pry'
   gem "pry-byebug"
+  gem "pry-rails"
 end
