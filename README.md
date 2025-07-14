@@ -91,3 +91,10 @@ Send us the code when you are done, preferably hosted on a service such as GitHu
 - Design choices and their advantages and disadvantages
 
 To solve the assignment, clone this repo and push it with your solution to a new repository.
+
+## Design Decisions
+
+* Package is the main business concept
+* Therefore a Municipality belongs to a Package, not the other way around
+* Municipalities are unique by their name and the Package they belong to
+* For simplicity, Municipalities are case sensitive
